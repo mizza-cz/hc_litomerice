@@ -10,6 +10,9 @@
          margin-bottom: 32px;
          height: 489px;
          padding: 0;
+         img{
+            object-fit: cover;
+         }
          a{
             width: 100%;
             height: 100%;
@@ -393,9 +396,6 @@ table{
 @media(max-width:480px){
    .article__gallery-main{
       height: 240px;
-      img{
-         object-fit: cover;
-      }
    }
    .article__post img{
       margin: 16px 0;
