@@ -85,3 +85,95 @@ p{
 .win{
    color: $green;
 }
+
+.main{
+   background:  #F4F4F4;
+   &__inner{
+      display: flex;
+      background-color: #fff;
+   }
+   &__content{
+      flex: 0 0 67.5%;
+      max-width: 67.5%;
+   }
+}
+.aside{
+   flex: 0 0 32.5%;
+   max-width: 32.5%;
+   padding: 22px 30px 0 30px;
+   
+   .tabulka{
+      margin-bottom: 64px;
+   }
+   &__zapasy{
+      .hp-soupiska__zapasy-box{
+         display: block;
+      }
+      .hp-soupiska__zapasy-box h3{
+         position: relative;
+         max-width: 100%;
+         margin-bottom: 7px;
+      }
+   }
+   .kalendar{
+      margin-bottom: 32px;
+   }
+   .hp-soupiska__aktuality{
+      padding-top: 5px;
+   }
+   .hp-soupiska__clanky{
+      padding: 0;
+      margin-bottom: 52px;
+   }
+   h3{
+      text-transform: uppercase;
+      margin-bottom: 17px;
+   }
+   &__list{
+      margin-bottom: 45px;
+      li{
+         border-top: 1px solid rgba(203, 212, 217, 0.5);
+         padding: 14px 0 15px;
+         .active{
+            &::before{
+               background-image: url('../images/svg/arrow-right-hover.svg');
+            }
+         }
+         a{
+            font-size: 1.125rem;
+            color: #000;
+            position: relative;
+            padding-left: 48px;
+            &::before{
+               content: '';
+               position: absolute;
+               transition: all .3s;
+               background-image: url('../images/svg/arrow-right.svg');
+               background-repeat: no-repeat;
+               width: 15px;
+               height: 11px;
+               background-size: contain;
+               left: 15px;
+               top: 4px;
+
+            }
+         }
+      }
+   }
+}
+.kalendar-wrap{
+   background-color: red;
+   height: 465px;
+   margin-bottom: 23px;
+}
+
+table{
+   border-collapse: collapse;
+   width: 100%;
+   .litomerice{
+      td{
+         color: $orange;
+         font-weight: 700;
+      }
+   }
+}
