@@ -1,6 +1,9 @@
 #hockey_bar_esports{
    background-color: #212121;
    height: 39px;
+   img{
+      width: auto;
+   }
 }
 .header{
    margin-top: 19px;
@@ -102,10 +105,9 @@
       }
       &:hover {
         .dropdown-menu {
-          max-height: 600px;
           transition: all 0.8s;
           display: block;
-          z-index: 28;
+          z-index: 10000;
         }
       }
    }
@@ -129,6 +131,7 @@
    width: 100%;
    line-height: 1.5;
    border-bottom: 1px solid rgba($orange, 0.5);
+   text-transform: uppercase;
    &:hover {
      text-decoration: underline;
    }
@@ -205,7 +208,7 @@
   .nav{
      display: none;
      position: absolute;
-     z-index: 98;
+     z-index: 1000;
      top: 72px;
      background-color: $blue;
      border-top: 3px solid $orange;
