@@ -153,15 +153,15 @@
       font-size: 1rem;
       line-height: 1.75;
    }
-   .anotace{
-      font-size: 1.5rem;
-      line-height: 2rem;
-      font-family: revolution-gothic, sans-serif;
-      font-weight: 700;
-      margin-bottom: 32px;
-   }
+ 
 }
-
+.anotace{
+   font-size: 1.5rem;
+   line-height: 2rem;
+   font-family: revolution-gothic, sans-serif;
+   font-weight: 700;
+   margin-bottom: 32px;
+}
 table{
    td,th{
       border-bottom: 1px solid #E7EDF5;
@@ -299,14 +299,11 @@ table{
          margin-bottom: 20px;
          
       }
-      .hp-rozcestnik__topclanek a::before{
-         display: none;
-      }
+   
       .hp-rozcestnik__topclanek-info{
-         padding: 0 30px;
-         position: relative;
+      
          h1{
-            color: #2C2C2C;
+           
             font-size: 2.4rem;
          }
       }
@@ -364,6 +361,20 @@ table{
          padding: 0;
       }
    }
+   
+   .article .hp-rozcestnik__topclanek-info .date{
+      margin-bottom: 15px;
+   }
+   .article .hp-rozcestnik__topclanek-info,
+   .article__content{
+      padding: 15px 15px;
+   }
+   .article .hp-rozcestnik__topclanek-img{
+      height: 280px;
+   }
+   .article .hp-rozcestnik__topclanek-info h1{
+      font-size: 1.6rem;
+   }
 }
 @media(max-width:660px){
    .article__gallery-wrap{
@@ -378,27 +389,19 @@ table{
       }
    }
 }
-@media(max-width:600px){
-   .article .hp-rozcestnik__topclanek-info .date{
-      margin-bottom: 15px;
-   }
-   .article .hp-rozcestnik__topclanek-info,
-   .article__content{
-      padding: 0 15px;
-   }
-   .article .hp-rozcestnik__topclanek-img{
-      height: 280px;
-   }
-   .article .hp-rozcestnik__topclanek-info h1{
-      font-size: 2rem;
-   }
-}
+
 @media(max-width:480px){
+   .article .hp-rozcestnik__topclanek{
+      margin-bottom: 16px;
+   }
    .article__gallery-main{
       height: 240px;
    }
    .article__post img{
       margin: 16px 0;
+   }
+   .article .hp-rozcestnik__topclanek-info .date{
+      margin-bottom: 8px;
    }
    table th:nth-child(2),table td:nth-child(2){
          display: none;

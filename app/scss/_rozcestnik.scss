@@ -222,9 +222,10 @@
       flex: 100%;
    }
    .hp-rozcestnik__topclanek-info{
-      position: relative;
+     
       padding-left: 0;
    }
+   
    .hp-rozcestnik__topclanek{
       height: 100%;
       h2{
@@ -234,9 +235,9 @@
          margin-bottom: 8px;
       }
       .date{
-         color: $orange;
-         background-color: transparent;
-         padding: 0;
+        
+         padding: 3px 10px;
+         font-size: 0.75rem;
       }
    }
    .hp-rozcestnik__inner{

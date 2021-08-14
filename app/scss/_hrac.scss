@@ -62,6 +62,9 @@
 
 @media(max-width:1240px){
    .hrac-page{
+      .hp-rozcestnik__topclanek a::before{
+         display: none;
+      }
       .hrac-page__info--right li span,
       .article .hp-rozcestnik__topclanek h1{
          color: #2C2C2C;
