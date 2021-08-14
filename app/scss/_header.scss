@@ -278,6 +278,12 @@
        top: 59px;
     }
  }
+ @media(max-width:690px){
+
+   #hockey_bar_esports{
+      display: none;
+   }
+ }
  @media(max-width:540px){
    .navbar__menu{
       margin-right: 5px;

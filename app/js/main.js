@@ -1,4 +1,6 @@
 $(function () {
+  $('select, .shop__check').styler();
+  //presmerovani pomoci selectu
      // tabs
      $('.hp-soupiska__tabs .tab').on('click', function (event) {
       var id = $(this).attr('data-id');
