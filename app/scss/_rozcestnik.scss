@@ -1,7 +1,7 @@
 .hp-rozcestnik{
-   background-color:  #2C2C2C;
+   background-color:  $blue;
    display: flex;
-   padding-bottom: 60px;
+ 
    &__wrapper{
       display: flex;
    }
@@ -106,6 +106,7 @@
       }
    }
    &__hraci{
+      padding-bottom: 60px;
       padding-top: 44px;
       max-width: 439px;
       border-right: 1px solid  #434050;
