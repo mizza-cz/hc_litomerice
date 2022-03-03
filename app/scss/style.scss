@@ -1,25 +1,1191 @@
 @import 'vars';
 @import 'global';
+@import 'fonts';
 @import 'header';
 @import 'footer';
-@import 'topstory';
-@import 'hp-soupiska';
-@import 'timer';
-@import 'partner';
-@import 'rozcestnik';
-@import 'hp-bottom';
-@import 'article-page';
-@import 'soupiska';
-@import 'hrac';
-@import 'tv';
-@import 'statistiky';
-@import 'zapasy-page';
-@import 'zapas';
 
+///// topstory HP start
+.topstory {
+  position: relative;
+}
+#hpArticle {
+  display: flex;
+}
+.topArticle {
+  transition: all 0.3s ease;
+  width: 21%;
+  position: relative;
+  min-height: 1px;
+}
+.topArticleActive {
+  width: 58% !important;
+  .hp-article__text {
+    h2 {
+      font-size: 2rem;
+      line-height: 1.25;
+    }
+  }
+}
+.hp-article {
+  &__box {
+    position: relative;
+    overflow: hidden;
+  }
+  &__img {
+    height: 519px;
+    display: block;
+    img {
+      width: 100%;
+      object-fit: cover;
+      min-height: 519px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+    }
+  }
+  &__text {
+    position: absolute;
+    bottom: 16px;
+    width: auto;
+    left: 0;
+    right: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: rgba($blue, 0.8);
+    padding: 16px;
+    h2 {
+      color: #fff;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      margin-bottom: 9px;
+    }
+  }
+}
 
+//// topstory HP end
 
+//gameslider start
 
+.gameslider {
+  margin-bottom: 32px;
+  &__links {
+    display: flex;
+    justify-content: center;
+    margin-right: 6px;
+    margin-bottom: 8px;
+    a {
+      font-size: 1.25rem;
+      font-weight: 700;
+      padding: 0 15px;
+      border-radius: 4px;
+      height: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      color: $blue;
+      transition: all 0.6s;
+      background-color: #fff;
+      box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+      margin: 0 4px;
+      border: 2px solid $blue;
+      &.active {
+        background-color: $yellow;
+        color: $blue;
+        border: 2px solid $yellow;
+        &:hover {
+          background-color: $yellow;
+          color: $blue;
+          border: 2px solid $yellow;
+        }
+      }
+      &:hover {
+        background-color: $yellow;
+        color: $blue;
+        border: 2px solid $yellow;
+      }
+    }
+    &.active a {
+      background-color: $yellow;
+      color: $blue;
+    }
+  }
+  &__inner {
+    position: relative;
+    padding: 32px;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 354px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to top, #fff, #dde1e6 33%);
+    }
+  }
+  &__item {
+    display: flex !important;
+    justify-content: space-evenly;
+  }
+  &__team {
+    height: 160px;
+    width: 160px;
+    margin-top: 40px;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+.gameslider__content {
+  text-align: center;
+  text-transform: uppercase;
+  &-info {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 4px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.14;
+    margin-bottom: 12px;
+  }
+  h2,
+  h6 {
+    display: block;
+    background-color: $blue;
+    padding: 4px 12px;
+    color: #fff;
+    width: max-content;
+    margin: 0 auto 2px;
+    max-width: 350px;
+  }
+  h4 {
+    margin-top: 16px;
+  }
+}
+.gameslider__btn {
+  position: absolute;
+  top: 50%;
+  border: none;
+  background-color: transparent;
+  transform: translateY(-50%);
+  outline: none;
+}
+.gameslider__btn--prev {
+  left: 25px;
+}
+.gameslider__btn--next {
+  right: 25px;
+}
 
+/// clanky and videa section
+.clanky,
+.videa {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.clanky__inner {
+  display: flex;
+  margin-left: -32px;
+  flex-wrap: wrap;
+}
+.item {
+  flex: 0 0 31%;
+  height: 100%;
+  margin-left: 32px;
+  position: relative;
+  text-align: left;
+  &:hover {
+    h4 {
+      text-decoration: underline;
+    }
+  }
+  &__text {
+    position: relative;
+    bottom: 60px;
+    width: auto;
+    left: 0;
+    right: 0;
+    margin-left: 32px;
+    margin-right: 32px;
+    background: #fff;
+    padding: 16px;
+    .date {
+      color: #060813;
+      opacity: 1;
+      margin-top: 6px;
+    }
+  }
+  &__text-link {
+    color: $blue;
+  }
+  &__link {
+    height: 288px;
+    position: relative;
 
+    img {
+      height: 100%;
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+.videa {
+  .item__link {
+    &::before {
+      content: '';
+      background-image: url('../images/svg/play.svg');
+      position: absolute;
+      top: 50%;
+      height: 48px;
+      width: 48px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transform: translateY(-110%);
+    }
+  }
+  .item__text {
+    background: $blue;
+    &-link {
+      color: #fff;
+    }
+    .date {
+      color: #fff;
+      opacity: 0.5;
+    }
+  }
+}
+//clanky and videa section end
+
+// result-slider start
+.result-slider {
+  margin-bottom: 32px;
+}
+.result-slider__inner {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 32px;
+  .slick-list {
+    width: 100% !important;
+  }
+  .slick-slide {
+    width: 100% !important;
+  }
+  .slick-track {
+    display: flex;
+    justify-content: space-around;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    height: 342px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #fff, #dde1e6 33%);
+  }
+  .gameslider__content {
+    max-width: 400px;
+    h6 {
+      padding: 6px 13px 5px;
+    }
+    h1 {
+      margin-bottom: 16px;
+    }
+    h1,
+    h4 {
+      color: $blue;
+    }
+  }
+}
+//result-slide end
+
+/// partners-slider start
+.partner-slider {
+  padding-top: 64px;
+  padding-bottom: 144px;
+  border-top: 1px solid rgba($blue, 0.15);
+  &__link {
+    display: block;
+    height: 56px;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+  }
+}
+.partner-slider__inner {
+  padding: 0 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -40px;
+  align-items: center;
+  .slick-slide {
+    margin: 0 20px;
+  }
+  button {
+    display: none !important;
+  }
+}
+// partnersslider end
+
+// hp-statistika start
+.hp-statistika {
+  margin-bottom: 64px;
+
+  &__inner {
+    display: flex;
+    margin-left: -32px;
+  }
+  &__col {
+    flex: 0 50%;
+    padding-left: 32px;
+  }
+  &__players {
+    background-color: $blue;
+    padding-bottom: 22px;
+  }
+}
+.top__hrac {
+  p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  &-link {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    padding-top: 32px;
+    display: block;
+    text-align: center;
+    margin-bottom: 33px;
+    h2 {
+      position: relative;
+      top: -24px;
+      background-color: $yellow;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      display: inline-block;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      position: relative;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../images/content/bg-player.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.top__hrac-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 3px;
+  margin-bottom: 21px;
+  li {
+    font-size: 3.5rem;
+    line-height: 1.14;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    span {
+      display: block;
+      background-color: $yellow;
+      width: 104px;
+      height: 24px;
+      font-size: 0.75rem;
+      color: $blue;
+      margin-top: 10px;
+      margin: 10px auto 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+  }
+}
+.hp-statistika__playes-table {
+  padding: 0 32px;
+
+  td {
+    padding: 11px 11px 0 11px;
+    border-bottom: 1px solid #ccc8c8;
+  }
+  td,
+  td p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  td.name {
+    padding-left: 0;
+    a {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 55px;
+      height: 56px;
+      margin-right: 16px;
+      object-fit: contain;
+      display: block;
+    }
+  }
+  td.golu,
+  td.zapasy {
+    padding: 11px 0 0 3px;
+    text-align: center;
+    width: 10%;
+  }
+  td.golu {
+    font-weight: 700;
+  }
+}
+.hp-statistika__table-scroll {
+  position: relative;
+}
+.hp-statistika__table {
+  th,
+  td {
+    border-bottom: none;
+  }
+  background-color: $blue;
+  text-align: center;
+  padding: 32px 16px 35px 16px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -46px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 480px;
+    height: 560px;
+    background-repeat: no-repeat;
+
+    background-image: url('../images/svg/combined-shape.svg');
+  }
+  h6 {
+    background-color: $yellow;
+    color: $blue;
+    padding: 7px 12px 5px 12px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  tr.litomericko td {
+    color: $yellow;
+  }
+  td {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.75;
+    padding: 3px 0px;
+  }
+  td.tym {
+    background-repeat: no-repeat;
+    text-align: left;
+    font-weight: 700;
+  }
+  td.poradi {
+    padding: 3px 15px;
+    width: 30px;
+  }
+  td.body {
+    padding: 3px 7px 3px 7px;
+    width: 30px;
+    text-align: end;
+  }
+  td.logo {
+    padding: 3px 18px 3px 8px;
+    width: 40px;
+
+    img {
+      width: 28px;
+      height: 28px;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  td.score {
+    width: 80px;
+    padding: 3px 31px 3px 31px;
+    text-align: center;
+  }
+  .btn {
+    color: $yellow;
+    border: 2px solid $yellow;
+    margin-top: 27px;
+    margin-left: 10px;
+    position: relative;
+  }
+}
+//hp-statistika end
+
+// clanek-page start
+.clanek {
+  &__img {
+    width: 100%;
+    height: 596px;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+.clanek-page {
+  h2 {
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 32px;
+  }
+}
+.clanek__top {
+  .date {
+    color: #060813;
+    opacity: 1;
+    margin-bottom: 32px;
+  }
+  p {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+}
+.clanek__img {
+  margin-bottom: -64px;
+}
+.clanek__wrapper {
+  position: relative;
+  background-color: #fff;
+  margin: 0 32px;
+  padding: 32px;
+}
+/// clanek-page end
+
+//soupiska-page start
+
+.soupiska__inner {
+  display: flex;
+  margin-left: -32px;
+  flex-wrap: wrap;
+}
+.soupiska__item {
+  margin-left: 32px;
+  margin-bottom: 68px;
+  flex: 0 0 30%;
+}
+.soupiska__link {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  padding-top: 32px;
+  img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: contain;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/content/bg-player.jpg');
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.soupiska__info {
+  position: absolute;
+  background-color: #fff;
+  margin: 0 16px;
+  z-index: 2;
+  padding: 16px;
+  width: auto;
+  right: 0;
+  left: 0;
+  text-align: center;
+  top: 81%;
+  .date {
+    color: #060813;
+    margin-bottom: 3px;
+  }
+  .surname {
+    text-transform: uppercase;
+  }
+  h4 {
+    color: $blue;
+  }
+}
+//soupiska page end
+
+//zapasy-page start
+.zapasy__inner {
+  margin-bottom: 64px;
+}
+.zapasy__logos {
+  display: flex;
+  padding-right: 7px;
+}
+.zapasy__item {
+  margin-bottom: 16px;
+}
+.zapasy__link {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc8c8;
+}
+.zapasy__logo {
+  width: 56px;
+  height: 56px;
+  margin-right: 8px;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+}
+.zapasy__info {
+  .date {
+    color: #060813;
+    opacity: 1;
+    margin: 2px 0 5px;
+  }
+}
+.zapasy__teams {
+  color: #060813;
+  line-height: 1.33;
+  font-size: 1.5rem;
+  h4 {
+    display: inline-block;
+  }
+  h4.LIT {
+    color: $blue;
+  }
+}
+.zapasy__result {
+  margin-left: auto;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.17;
+}
+.draw {
+  color: #878d96;
+}
+.lost {
+  color: #d91e28;
+}
+.win {
+  color: #089d9a;
+}
+//zapasy-pag end
+
+// archiv-page start
+.archiv-page {
+  .form {
+    display: flex;
+    padding-top: 16px;
+    margin-bottom: 32px;
+  }
+  .select__redirect {
+    max-width: 200px;
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+}
+.archiv,
+.gallery {
+  margin-bottom: 64px;
+  &__info {
+    h4 {
+      color: $blue;
+      margin-bottom: 6px;
+    }
+    .date {
+      opacity: 1;
+      color: #060813;
+      margin-bottom: 14px;
+    }
+  }
+  &__link {
+    display: flex;
+  }
+  &__img {
+    max-width: 200px;
+    height: 132px;
+    margin-right: 32px;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__item {
+    border-bottom: 1px solid #ccc8c8;
+    padding-bottom: 5px;
+    margin-bottom: 32px;
+    &:hover {
+      h4 {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.search {
+  max-width: 200px;
+  width: 100%;
+  margin-right: 16px;
+  box-shadow: 0 8px 24px 0 rgba(6, 8, 19, 0.08), 0 2px 4px 0 rgba(6, 8, 19, 0.04);
+  cursor: pointer;
+  display: block;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  color: #060813;
+  padding: 0 12px;
+}
+
+//archiv-page end
+
+//hrac-page start
+.main.hrac-page {
+  padding-top: 48px;
+  margin-bottom: 64px;
+  h6 {
+    text-transform: uppercase;
+  }
+}
+.hrac {
+  display: flex;
+  margin-bottom: 32px;
+
+  &__box {
+    display: flex;
+    p {
+      line-height: 1.78;
+      min-width: 112px;
+      margin-bottom: 3px;
+    }
+  }
+  &__info {
+    margin-top: 31px;
+    h1 {
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.hrac__img {
+  position: relative;
+  padding-top: 32px;
+  width: 316px;
+  height: 320px;
+  margin-right: 32px;
+  img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: contain;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/content/bg-player.jpg');
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.hrac__table {
+  margin-bottom: 32px;
+  table {
+    th,
+    td {
+      margin: 0;
+      padding: 0 16px 8px 16px;
+      width: 100%;
+      text-align: center;
+    }
+    th:last-child,
+    tr td:last-child {
+      padding-right: 8px;
+    }
+    th:first-child,
+    tr td:first-child {
+      text-align: left;
+      padding-left: 8px;
+    }
+    tr td:first-child {
+      font-weight: 700;
+    }
+    td {
+      line-height: 1.78;
+      font-size: 1.125rem;
+      border-bottom: 1px solid #ccc8c8;
+      padding: 8px;
+    }
+  }
+  th {
+    font-size: 0.75rem;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc8c8;
+  }
+}
+.hrac__clanek {
+  border-bottom: 1px solid #ccc8c8;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  display: block;
+  &:hover {
+    h4 {
+      text-decoration: underline;
+    }
+  }
+  h4 {
+    color: $blue;
+  }
+  .date {
+    color: #060813;
+    opacity: 1;
+    margin-top: 7px;
+  }
+}
+// hrac-page end
+
+// partneri-page
+.partneri-page,
+.gallery {
+  margin-bottom: 64px;
+}
+.partneri__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -32px;
+}
+.partneri__item {
+  background-color: #fff;
+  flex: 0 0 29%;
+  height: 200px;
+  margin-left: 32px;
+  box-shadow: 0 6px 12px 0 rgba(#000, 0.15);
+  padding: 20px;
+  display: block;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    border-radius: 16px;
+  }
+}
+
+// tabulka -page
+
+.tabulka {
+  margin-bottom: 32px;
+  &__list {
+    margin-bottom: 64px;
+    li {
+      font-size: 1.125rem;
+      line-height: 1.75;
+    }
+  }
+  td {
+    width: 40px;
+  }
+  th,
+  td {
+    border-bottom: 1px solid #ccc8c8;
+    text-align: center;
+    padding: 8px 12px;
+    &:last-child {
+      padding-right: 8px;
+    }
+    &:first-child {
+      padding-left: 8px;
+    }
+  }
+  td.poradi,
+  td.logo,
+  td.team {
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    text-transform: uppercase;
+    color: #060813;
+    letter-spacing: 4px;
+    font-size: 0.75rem;
+  }
+  th.poradi,
+  td.poradi {
+    width: 30px;
+  }
+
+  th.team {
+    text-align: left;
+    width: 100%;
+  }
+  td.team {
+    background-repeat: no-repeat;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  tr.litomericko td {
+    color: $blue;
+  }
+  td.logo {
+    width: 40px;
+
+    img {
+      width: 28px;
+      height: 28px;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+
+/// mladez
+.mladez__menu {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.mladez__list {
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 8px;
+  a {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0 15px;
+    border-radius: 4px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: black;
+    transition: all 0.6s;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    &.active {
+      background-color: $blue;
+      color: #fff;
+      &:hover {
+        background-color: $blue;
+        color: #fff;
+      }
+    }
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+    }
+  }
+  &.active a {
+    background-color: $blue;
+    color: #fff;
+  }
+}
+.mladez__inner {
+  margin-bottom: 64px;
+  display: block;
+  font-size: 1.25rem;
+
+  line-height: 20px;
+  align-items: center;
+
+  .mladez__tym {
+    margin: 0 5px;
+    color: $blue;
+    font-weight: 700;
+  }
+}
+.mladez__content {
+  display: none;
+}
+.mladez__content.tab-active {
+  display: block;
+}
+.tab {
+  margin-left: 15px;
+  display: inline-block;
+
+  &.active .tab__link {
+    text-decoration: none;
+  }
+}
+.tab__link {
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 8px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.mladez__top {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+// statistiky
+.statistiky__table {
+  margin-bottom: 64px;
+  .name {
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+  }
+  th {
+    text-transform: uppercase;
+    color: #060813;
+    letter-spacing: 4px;
+    font-size: 0.75rem;
+  }
+  td {
+    width: 40px;
+    font-weight: 1.15rem;
+  }
+  th,
+  td {
+    border-bottom: 1px solid #ccc8c8;
+    text-align: center;
+    padding: 8px 12px;
+    &:last-child {
+      padding-right: 8px;
+    }
+    &:first-child {
+      padding-left: 8px;
+    }
+  }
+}
+
+/// reportaz-page
+.reportaz {
+  .gameslider__item {
+    padding-top: 25px;
+    border-top: 1px solid #ccc8c8;
+    border-bottom: 1px solid #ccc8c8;
+  }
+  .gameslider__team {
+    width: 100px;
+    height: 100px;
+  }
+}
+h2 {
+  margin-top: 40px;
+}
+.statsbox {
+  padding: 15px;
+  font-size: 1.125rem;
+  border-bottom: 2px solid #ccc8c8;
+
+  h6 {
+    background-color: #fff;
+    color: $blue;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/// vedeni-klubu
+.vedeni-klubu {
+  h2 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc8c8;
+    margin-bottom: 25px;
+  }
+}
+.vedeni__row {
+  display: flex;
+}
+.vedeni__item {
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+  height: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  a {
+    padding-bottom: 15px;
+    h6 {
+      margin-bottom: -15px;
+    }
+  }
+  h6,
+  a {
+    background-color: transparent;
+    color: $blue;
+    margin-bottom: 0;
+    background-color: #f7f7f7;
+    width: 100%;
+  }
+  p {
+    margin-bottom: 0;
+    background-color: #f7f7f7;
+  }
+}
 
 @import 'media';

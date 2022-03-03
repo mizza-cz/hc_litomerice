@@ -1,0 +1,529 @@
+@media (max-width: 1370px) {
+  .partner-slider__inner {
+    margin-left: -20px;
+  }
+  .clanky__inner {
+    margin-left: 0;
+  }
+  .item {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 1340px) {
+  .hp-statistika__playes-table td.golu,
+  .hp-statistika__playes-table td.zapasy {
+    width: 12%;
+  }
+}
+@media (max-width: 1310px) {
+  .partneri__item {
+    flex: 0 0 30.1%;
+  }
+  .clanek__img {
+    height: auto;
+  }
+  .main .aside {
+    display: none;
+  }
+  .main .aside {
+    display: none;
+  }
+  .main.hrac-page {
+    .main__wrapper {
+      margin: 0 32px;
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .partner-slider__link:first-child {
+    margin-left: 0;
+  }
+  .partner-slider__inner {
+    margin-left: 0;
+  }
+  .item {
+    flex: 0 50%;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .topArticle {
+    width: 25%;
+  }
+  .topArticleActive {
+    width: 50% !important;
+  }
+  .gameslider__btn--prev {
+    left: 10px;
+  }
+  .gameslider__btn--next {
+    right: 10px;
+  }
+  .gameslider__team {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (max-width: 1100px) {
+  .hp-statistika__playes-table td.golu,
+  .hp-statistika__playes-table td.zapasy {
+    width: 11%;
+  }
+  .hp-statistika__inner {
+    flex-wrap: wrap;
+  }
+  .hp-statistika__col {
+    flex: 100%;
+  }
+}
+@media (max-width: 990px) {
+  .partneri__item {
+    flex: 0 0 29%;
+  }
+}
+@media (max-width: 957px) {
+  .soupiska__item {
+    flex: 0 40%;
+  }
+}
+@media (max-width: 900px) {
+  .vedeni__row {
+    flex-wrap: wrap;
+  }
+  .vedeni__item {
+    width: 330px;
+  }
+  .main.hrac-page {
+    .main__wrapper {
+      margin: 0px;
+    }
+  }
+  .zapasy__result {
+    margin: 10px auto 0;
+  }
+  .zapasy__logos {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .zapasy__link {
+    text-align: center;
+    flex-direction: column;
+  }
+  .gameslider__inner {
+    padding: 32px 0px;
+  }
+  .gameslider__content {
+    width: 100%;
+    position: relative;
+    order: 2;
+  }
+  .gameslider__team {
+    position: relative;
+    order: 1;
+    margin: 30px 10px;
+  }
+  .topstory {
+    margin-bottom: 0;
+  }
+  .gameslider__item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .topArticle,
+  .topArticleActive {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+  .hp-article__text {
+    h2 {
+      font-size: 2rem;
+      line-height: 1.25;
+    }
+  }
+  main {
+    padding-top: 25px;
+  }
+  #hpArticle {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .archiv-page {
+    .search {
+      height: 42px;
+      max-width: 316px;
+    }
+    .form {
+      flex-wrap: wrap;
+    }
+    .select__redirect {
+      margin-bottom: 32px;
+      max-width: 316px;
+    }
+  }
+  .hrac__img {
+    width: 100%;
+    height: 420px;
+  }
+  .hrac {
+    flex-direction: column;
+  }
+  .archiv__link {
+    flex-direction: column;
+  }
+  .archiv__img {
+    max-width: 100%;
+    height: 320px;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .soupiska__item {
+    flex: 0 45%;
+  }
+  .clanek__wrapper {
+    padding: 16px;
+  }
+  .result-slider__inner {
+    button {
+      display: none !important;
+    }
+  }
+  .item__text {
+    margin-left: 16px;
+    margin-right: 16px;
+    h4 {
+      font-size: 1.3rem;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .tabulka {
+    overflow-x: auto;
+    table {
+      width: 750px;
+    }
+  }
+  .partneri__item {
+    flex: 0 45%;
+  }
+  .gameslider__content h4 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+  .gameslider__content h1 {
+    font-size: 3rem;
+  }
+  .gameslider__content h2 {
+    font-size: 1.7rem;
+  }
+  .gameslider__team {
+    width: 120px;
+    height: 120px;
+  }
+  .hp-article__text h2,
+  .topArticleActive .hp-article__text h2 {
+    font-size: 1.17rem;
+  }
+  .hp-article__img {
+    height: 400px;
+    img {
+      min-height: 100%;
+      height: auto;
+    }
+  }
+}
+@media (max-width: 720px) {
+  .footer__nav {
+    display: none;
+  }
+  .footer__inner::before {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .item {
+    flex: 0 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 700px) {
+  .vedeni__item {
+    width: 100%;
+    flex: 0 50%;
+  }
+  .statistiky__table {
+    overflow-x: auto;
+    table {
+      width: 680px;
+    }
+  }
+  .archiv-page {
+    .select__redirect,
+    .search {
+      margin-bottom: 16px;
+    }
+    .form {
+      flex-direction: column;
+    }
+    .btn {
+      max-width: 316px;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 680px) {
+  p {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  .clanek__wrapper {
+    margin: 0;
+  }
+  .clanek__img {
+    margin-bottom: 0;
+  }
+  .hp-statistika__playes-table td.golu,
+  .hp-statistika__playes-table td.zapasy {
+    width: 13%;
+  }
+}
+@media (max-width: 660px) {
+  .soupiska__inner {
+    margin-left: -16px;
+  }
+  .soupiska__item {
+    margin-left: 16px;
+    flex: 0 47%;
+  }
+}
+@media (max-width: 640px) {
+  .partneri__item {
+    flex: 0 44%;
+  }
+}
+@media (max-width: 600px) {
+  .tabs {
+    margin-left: -12px;
+  }
+  .mladez__tym {
+    display: none;
+  }
+  .gallery__link {
+    flex-direction: column;
+  }
+  .gallery__img {
+    max-width: 100%;
+    height: 240px;
+    margin-right: 0;
+  }
+  .hrac__img {
+    height: 320px;
+  }
+  .zapasy__result {
+    font-size: 2.3rem;
+  }
+  .zapasy__teams h4 {
+    font-size: 1.2rem;
+  }
+  .top__hrac-list {
+    flex-wrap: wrap;
+  }
+  .top__hrac-list li {
+    width: 35%;
+    margin-bottom: 25px;
+  }
+  .hp-statistika__table td.score {
+    padding: 3px 20px;
+  }
+  .hp-statistika__table td.poradi {
+    padding: 3px 10px;
+  }
+  .hp-statistika__table {
+    padding: 32px 10px 35px 10px;
+  }
+  .gameslider__content h2 {
+    max-width: 100%;
+  }
+  .gameslider__content {
+    padding: 0 30px;
+  }
+  .item {
+    flex: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .soupiska__inner {
+    margin-left: 0;
+  }
+  .soupiska__item {
+    flex: 100%;
+    margin-left: 0;
+  }
+  .table {
+    tr td:first-child {
+      width: 223px;
+    }
+    th {
+      text-align: center;
+    }
+    th:first-child,
+    tr td:first-child {
+      text-align: left;
+      padding-left: 8px;
+    }
+    td {
+    }
+  }
+}
+@media (max-width: 540px) {
+  .vedeni__item {
+    flex: 100%;
+  }
+  .partneri__inner {
+    margin-left: 0;
+  }
+  .partneri__item {
+    flex: 100%;
+    max-width: 320px;
+    margin: 0 auto 32px;
+  }
+  .archiv__img {
+    height: 250px;
+  }
+  .hp-statistika__table {
+    &::before {
+      display: none;
+    }
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .hp-statistika__playes-table td.name {
+    width: 70%;
+  }
+  .hp-statistika__playes-table {
+    padding: 0 15px;
+  }
+  .hp-statistika__table td.logo {
+    display: none;
+  }
+  .footer__inner {
+    padding: 90px 0 30px;
+  }
+  .gameslider__content-info {
+    line-height: 1.4;
+  }
+  .hp-article__img {
+    height: 320px;
+  }
+  .hp-article__text {
+    bottom: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .archiv-page {
+    .select__redirect,
+    .search,
+    .btn {
+      max-width: 100%;
+    }
+  }
+  .clanek__img {
+    height: 340px;
+  }
+  .clanek__wrapper {
+    padding: 16px 0;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .hp-statistika__inner,
+  .hp-statistika__table .btn {
+    margin-left: 0;
+  }
+  .hp-statistika__col {
+    padding-left: 0;
+    width: 100%;
+  }
+  .hp-statistika__table-scroll,
+  .hrac__table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    table {
+      -webkit-overflow-scrolling: touch;
+      width: 450px;
+    }
+  }
+  .hp-statistika__playes-table {
+    padding: 0 10px;
+  }
+  .hp-statistika__playes-table td.name {
+    width: 50%;
+  }
+  .hp-statistika__playes-table td.golu,
+  .hp-statistika__playes-table td.zapasy {
+    width: 20%;
+  }
+  .hp-statistika__playes-table td.name img {
+    margin-right: 10px;
+  }
+  .hp-statistika__table td.score {
+    padding: 3px 10px;
+  }
+  .hp-statistika__table td.poradi {
+    padding: 3px 7px;
+  }
+  .hp-statistika__table {
+    padding: 32px 0 35px;
+  }
+  .gameslider__content {
+    padding: 0 10px;
+  }
+  .result-slider__inner {
+    padding: 32px 0;
+  }
+  .item__link {
+    height: 260px;
+  }
+}
+
+@media (max-width: 460px) {
+  .archiv__img,
+  .gallery__img {
+    height: 180px;
+  }
+  .top__hrac-list li {
+    width: 50%;
+  }
+  .hp-statistika__playes-table td.name img {
+    display: none;
+  }
+  .hp-statistika__playes-table td.golu,
+  .hp-statistika__playes-table td.zapasy {
+    width: 16%;
+  }
+}
+
+@media (max-width: 380px) {
+  .hp-statistika__playes-table td.name {
+    width: 35%;
+  }
+  .hp-statistika__playes-table td p b {
+    display: block;
+  }
+}
